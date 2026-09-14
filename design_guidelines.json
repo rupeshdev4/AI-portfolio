@@ -1,0 +1,177 @@
+{
+  "project_name": "Rupesh Dev — Dark Futuristic AI Product & Enterprise Portfolio",
+  "app_type": "portfolio (single-page immersive landing page, dark futuristic, award-worthy Awwwards-level, framer-motion + lenis smooth scroll, subtle 3D canvas particles)",
+  "persona": {
+    "name": "Rupesh Dev",
+    "title": "AI Product Builder & Enterprise Customer Success Leader",
+    "background": "Ex-SAP Consultant, $1.8M+ Enterprise Portfolios Managed, 92.5% CSAT Score, Enterprise SaaS Architect turned Generative AI Product Developer.",
+    "target_audience": "Tech Recruiters, VCs, Product Leaders, Founders, Enterprise Execs"
+  },
+  "theme": {
+    "mode": "dark",
+    "vibe": "Dark Futuristic AI, Tactical Cyber Minimal, Awwwards-grade motion and typography",
+    "background": "#07080A",
+    "surface": "#0E1015",
+    "surface_elevated": "#151821",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_glow": "rgba(0, 240, 255, 0.25)"
+  },
+  "typography": {
+    "fonts": {
+      "headline": "Clash Display / Cabinet Grotesk / Syne, sans-serif",
+      "subheadline": "Space Grotesk / Outfit, sans-serif",
+      "body": "Plus Jakarta Sans / Inter, sans-serif",
+      "mono": "JetBrains Mono / Fira Code, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-medium tracking-tight",
+      "card_title": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base sm:text-lg text-slate-300 leading-relaxed",
+      "label": "text-xs font-mono uppercase tracking-[0.25em] text-cyan-400"
+    }
+  },
+  "colors": {
+    "primary_dark": "#07080A",
+    "primary_accent": "#00F0FF",
+    "secondary_accent": "#8B5CF6",
+    "success_neon": "#10B981",
+    "gold_glow": "#F59E0B",
+    "text_primary": "#F8FAFC",
+    "text_muted": "#94A3B8",
+    "card_bg": "#0D0F14",
+    "card_border": "#1E222D",
+    "gradient_cyan_purple": "from-cyan-400 via-indigo-500 to-purple-500",
+    "gradient_glow": "bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-950 to-black"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-slate-950/70 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "tracing_beam": "relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-cyan-500 before:via-purple-500 before:to-transparent before:rounded-2xl",
+    "spotlight_card": "group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)]",
+    "ambient_noise": "bg-[radial-gradient(#ffffff0a_1px,transparent_1px)] [background-size:16px_16px]"
+  },
+  "image_urls": {
+    "hero_portrait": {
+      "url": "https://images.unsplash.com/photo-1607693965623-01021a7aee54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwQUklMjB0ZWNoJTIwZGFyayUyMHBvcnRyYWl0JTIwc29mdHdhcmUlMjBlbmdpbmVlciUyMGNvbnN1bHRpbmclMjBoZXJvfGVufDB8fHx8MTc4OTM2MTg4Mnww&ixlib=rb-4.1.0&q=85",
+      "description": "Rupesh Dev futuristic tech portrait in dark lighting",
+      "category": "hero_portrait"
+    },
+    "ai_head_abstract": {
+      "url": "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwQUklMjB0ZWNoJTIwZGFyayUyMHBvcnRyYWl0JTIwc29mdHdhcmUlMjBlbmdpbmVlciUyMGNvbnN1bHRpbmclMjBoZXJvfGVufDB8fHx8MTc4OTM2MTg4Mnww&ixlib=rb-4.1.0&q=85",
+      "description": "Glowing AI neural head 3D render",
+      "category": "ai_avatar_chatbot"
+    },
+    "finpilot_product": {
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxmaW50ZWNoJTIwQUklMjBkYXNoYm9hcmQlMjBkYXJrJTIwaW50ZXJmYWNlJTIwcHJldmlld3xlbnwwfHx8fDE3ODkzNjE4ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "FinPilot AI Fintech analytics platform preview",
+      "category": "featured_product_finpilot"
+    },
+    "analytics_dashboard": {
+      "url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxmaW50ZWNoJTIwQUklMjBkYXNoYm9hcmQlMjBkYXJrJTIwaW50ZXJmYWNlJTIwcHJldmlld3xlbnwwfHx8fDE3ODkzNjE4ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "ChurnRadar Revenue Intelligence Dashboard",
+      "category": "product_churnradar"
+    },
+    "cyber_geometry_bg": {
+      "url": "https://images.unsplash.com/photo-1683064325134-3acfdef9c6d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBmdXR1cmlzdGljJTIwQUklMjBuZXVyYWwlMjBuZXR3b3JrJTIwY3liZXIlMjBnZW9tZXRyeSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg5MzYxODg2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract cyber wave geometry background",
+      "category": "section_bg"
+    }
+  },
+  "key_sections_and_components": [
+    {
+      "section_id": "navbar",
+      "name": "Glassmorphism Floating Header",
+      "description": "Sticky top bar with Rupesh Dev logo, live available badge ('Open to CS & AI Product Leadership Roles'), nav links (Manifesto, Products, AI Game, CV Matrix, Ask AI), and CTA ('Download CV' + 'Chatbot')",
+      "test_id": "navigation-header"
+    },
+    {
+      "section_id": "hero",
+      "name": "Kinetic Hero with Particle Canvas & Masked Reveal",
+      "description": "High-impact dark futuristic hero. Headline: 'Architecting $1.8M+ Enterprise SaaS Portfolios. Building Autonomous AI Products.' Subtext highlighting ex-SAP background, 92.5% CSAT score, and hands-on AI engineering. Interactive CTA buttons ('Explore AI Showcase', 'Ask My CV AI', 'FinPilot Demo'). Features quick metric badges ($1.8M ARR, 92.5% CSAT, 4 AI Products).",
+      "test_id": "hero-section"
+    },
+    {
+      "section_id": "marquee",
+      "name": "Editorial Kinetic Ticker",
+      "description": "Infinite smooth scrolling ticker showcasing key credentials: 'EX-SAP CONSULTANT • $1.8M+ ENTERPRISE PORTFOLIO • 92.5% CSAT • GENERATIVE AI BUILDER • FINPILOT FINTECH • ENTERPRISE SAAS ADOPTION • VOICE CLONE STUDIO • CHURN PREDICTION AI'",
+      "test_id": "editorial-marquee"
+    },
+    {
+      "section_id": "manifesto",
+      "name": "Numbered Manifesto Chapters (The Story of Rupesh)",
+      "description": "3-Chapter visual story designed specifically for recruiters: Chapter 01 (The SAP Foundation - Complex Systems & Enterprise Rigor), Chapter 02 (The $1.8M CS Arc - Driving 92.5% CSAT & Retention), Chapter 03 (The AI Crucible - Building FinPilot & Intelligent SaaS Tools). Uses sleek tab switch or accordion card visual style with key metrics.",
+      "test_id": "manifesto-chapters"
+    },
+    {
+      "section_id": "ai_products",
+      "name": "AI Product Showcase Cards with Spotlight Glow",
+      "description": "Grid of featured products created by Rupesh: 1) FinPilot (Featured Fintech Product - Autonomous financial modeling, risk calculation, automated yield insights), 2) EchoVerse (Voice Clone & Audio AI Studio), 3) VisionPulse (Industrial Vision Inspection AI), 4) ChurnRadar (Enterprise Revenue & Retention Intelligence). Includes interactive live modal previews & feature breakdowns.",
+      "test_id": "ai-products-showcase"
+    },
+    {
+      "section_id": "ai_game",
+      "name": "Playable Interactive AI Game: Neural Snake with AI Autopilot",
+      "description": "Embedded interactive canvas/grid game where recruiters can play retro Snake OR toggle 'AI Autopilot' to watch a heuristic/pathfinding AI play autonomously at 200ms per move. Displays live AI score, path calculations, decision log, and high score board.",
+      "test_id": "playable-ai-game"
+    },
+    {
+      "section_id": "cv_matrix",
+      "name": "Creative CV Timeline & Skills Radar Matrix",
+      "description": "Interactive experience timeline detailing SAP Consulting, Enterprise Customer Success Management, AI Product Leadership, with expandable achievements, key clients, tech stack (Python, React, OpenAI API, PyTorch, LangChain, SAP S/4HANA), certifications & awards.",
+      "test_id": "cv-matrix-timeline"
+    },
+    {
+      "section_id": "ask_cv_chatbot",
+      "name": "Floating & Embedded 'Ask My CV' AI Chatbot Widget",
+      "description": "Floating chat bubble and full drawer modal where recruiters can ask questions like 'What is Rupesh's experience with enterprise clients?', 'Tell me about his CSAT metrics', 'Why hire him for AI Product Management?', 'How did he build FinPilot?'. Pre-loaded with quick question chips and instant smart response engine tailored for recruiters.",
+      "test_id": "ask-cv-chatbot"
+    },
+    {
+      "section_id": "contact_footer",
+      "name": "High-Contrast Terminal Contact Footer",
+      "description": "Footer with 'Initiate Dialogue' CTA, direct buttons for Email (rupesh.dev@example.com), LinkedIn, GitHub, Resume PDF download, quick copy buttons, and system status indicator ('Status: All Neural Systems Operational').",
+      "test_id": "contact-footer"
+    }
+  ],
+  "layout_and_grid": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 lg:gap-8",
+    "section_spacing": "py-20 lg:py-32"
+  },
+  "motion_and_interactivity": {
+    "library": "framer-motion + custom particle canvas",
+    "hover_effects": "border glow, image scale 1.05, translate-y-1, cyan glow shadow",
+    "scroll_trigger": "fade-in-up staggered entrance for list items and grid cards",
+    "micro_interactions": "click ripples, sound effects toggle (optional audio feedback), status pingers, code snippet copy toast via Sonner"
+  },
+  "accessibility_and_testing": {
+    "data_testid_rule": "ALL interactive buttons, inputs, tabs, modals, game controls, and chatbot chips MUST have explicit data-testid attributes formatted in kebab-case",
+    "contrast_standard": "WCAG AA compliant - high contrast text (#F8FAFC) against dark slate background (#07080A), glowing accents (#00F0FF)",
+    "focus_states": "ring-2 ring-cyan-400 ring-offset-2 ring-offset-slate-950"
+  },
+  "instructions_to_main_agent": [
+    "1. Ensure the landing page is a single-page immersive portfolio for Rupesh Dev that immediately commands attention from recruiters.",
+    "2. Implement the kinetic hero section with particle effects background, masked headline animations, key metrics ($1.8M ARR, 92.5% CSAT), and fast action buttons.",
+    "3. Build the featured FinPilot card prominently in the AI Product Showcase with rich fintech description, interactive metric preview, live modal, and tech stack tags.",
+    "4. Create the playable AI Game component ('Neural Snake') with dual mode: Manual Arrow Key controls and 'AI Autopilot' mode where the snake plays automatically using a pathfinding algorithm with live AI thought process logs.",
+    "5. Build the 'Ask My CV' AI Chatbot floating widget and modal with recruiter quick chips ('Why hire Rupesh?', '$1.8M Portfolio details', 'SAP Experience', 'FinPilot architecture') and smart responses.",
+    "6. Build the 3-Chapter Manifesto section detailing his transition from SAP Consultant to Enterprise CS Leader to AI Product Builder.",
+    "7. Include the Editorial Marquee, CV Experience Matrix timeline, Skills Radar/Grid, Certifications, and high-impact Terminal Footer with Email, LinkedIn, GitHub, and Resume Download button.",
+    "8. Ensure all interactive components include data-testid attributes as specified in the testing guidelines.",
+    "9. Use Sonner for toast notifications when recruiters copy emails, resume links, or trigger chatbot actions."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g. transition: all). Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container (do not add .App { text-align: center; }).",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use generous spacing (p-6, p-8, p-12) to prevent cramped UI.",
+    "All interactive elements MUST have data-testid attributes in kebab-case format."
+  ]
+}
