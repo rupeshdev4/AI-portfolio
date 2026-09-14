@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, Check, X, Gamepad2 } from "lucide-react";
-import { PRODUCTS } from "../data/portfolio";
+import { PRODUCTS, FINPILOT_DEMO_URL } from "../data/portfolio";
 import { scrollToId } from "../utils";
+import { VoiceDemo } from "./VoiceDemo";
 
 const SpotlightCard = ({ children, className = "", testid, onClick }) => {
   const ref = useRef(null);
@@ -101,12 +102,24 @@ export const Products = () => {
                   <span key={s} className="rounded-full border border-white/10 px-3 py-1 font-mono2 text-[10px] text-slate-400">{s}</span>
                 ))}
               </div>
-              <button
-                data-testid="finpilot-open-casefile-button"
-                className="mt-8 rounded-full bg-cyan-400 px-6 py-3 font-mono2 text-[11px] font-bold uppercase tracking-widest text-[#07080A] hover:bg-cyan-300 transition-colors duration-300"
-              >
-                Open Case File
-              </button>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <a
+                  data-testid="finpilot-launch-demo-button"
+                  href={FINPILOT_DEMO_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 font-mono2 text-[11px] font-bold uppercase tracking-widest text-[#07080A] hover:bg-cyan-300 hover:shadow-[0_0_24px_rgba(0,240,255,0.45)] transition-[background-color,box-shadow] duration-300"
+                >
+                  Launch Live App <ArrowUpRight className="size-4" />
+                </a>
+                <button
+                  data-testid="finpilot-open-casefile-button"
+                  className="rounded-full border border-white/15 px-6 py-3 font-mono2 text-[11px] uppercase tracking-widest text-slate-200 hover:border-cyan-400/60 hover:text-cyan-300 transition-colors duration-300"
+                >
+                  Open Case File
+                </button>
+              </div>
             </div>
           </SpotlightCard>
         </motion.div>
@@ -221,6 +234,18 @@ export const Products = () => {
                     <span key={s} className="rounded-full border border-white/10 px-3 py-1 font-mono2 text-[10px] text-slate-400">{s}</span>
                   ))}
                 </div>
+                {active.id === "finpilot" && (
+                  <a
+                    data-testid="finpilot-modal-launch-button"
+                    href={FINPILOT_DEMO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 font-mono2 text-[11px] font-bold uppercase tracking-widest text-[#07080A] hover:bg-cyan-300 transition-colors duration-300"
+                  >
+                    Launch Live App <ArrowUpRight className="size-4" />
+                  </a>
+                )}
+                {active.id === "echoverse" && <VoiceDemo />}
               </div>
             </motion.div>
           </motion.div>

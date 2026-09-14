@@ -165,6 +165,56 @@ async def chat_history(session_id: str):
     return {"messages": msgs}
 
 
+TTS_VOICES = {"alloy", "ash", "coral", "echo", "fable", "nova", "onyx", "sage", "shimmer"}
+
+
+class TTSRequest(BaseModel):
+    text: str
+    voice: str = "onyx"
+
+
+@api_router.post("/tts")
+async def tts_generate(req: TTSRequest):
+    import re
+    import hashlib
+    from bson import Binary
+    from emergentintegrations.llm.openai import OpenAITextToSpeech
+
+    text = re.sub(r"https?://\S+", "", req.text)
+    text = re.sub(r"[*_#>~|`]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()[:500]
+    if not text:
+        return {"error": "empty text"}
+    voice = req.voice if req.voice in TTS_VOICES else "onyx"
+    key = hashlib.sha256(f"{text}|{voice}|1.0|tts-1|mp3".encode()).hexdigest()
+    existing = await db.tts_cache.find_one({"key": key}, {"_id": 1})
+    if not existing:
+        try:
+            tts = OpenAITextToSpeech(api_key=os.environ["EMERGENT_LLM_KEY"])
+            audio = await tts.generate_speech(text=text, model="tts-1", voice=voice)
+        except Exception:
+            logging.exception("tts generation error")
+            return {"error": "synthesis failed"}
+        await db.tts_cache.insert_one(
+            {"key": key, "audio": Binary(audio), "created_at": datetime.now(timezone.utc).isoformat()}
+        )
+    return {"url": f"/api/tts/{key}.mp3"}
+
+
+@api_router.get("/tts/{key}.mp3")
+async def tts_serve(key: str):
+    from fastapi import Response, HTTPException
+
+    doc = await db.tts_cache.find_one({"key": key}, {"_id": 0, "audio": 1})
+    if not doc:
+        raise HTTPException(status_code=404, detail="not found")
+    return Response(
+        content=bytes(doc["audio"]),
+        media_type="audio/mpeg",
+        headers={"Cache-Control": "public, max-age=31536000"},
+    )
+
+
 app.include_router(api_router)
 
 app.add_middleware(

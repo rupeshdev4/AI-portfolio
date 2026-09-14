@@ -4,9 +4,11 @@ export const CV_PDF_URL =
 export const CONTACT = {
   email: "rupeshdev4@gmail.com",
   phone: "+91 8446541707",
-  linkedin: "https://www.linkedin.com/in/rupesh-dev",
-  github: "https://github.com/rupeshdev",
+  linkedin: "https://www.linkedin.com/in/rupesh-dev-a394a4156/",
+  github: "https://github.com/rupeshdev4",
 };
+
+export const FINPILOT_DEMO_URL = "https://finpilot-preview-1.emergent.host/?utm_source=share";
 
 export const NAV_LINKS = [
   { label: "Manifesto", target: "manifesto" },
@@ -85,7 +87,7 @@ export const PRODUCTS = [
     id: "echoverse",
     name: "EchoVerse",
     tag: "VOICE // AUDIO AI",
-    status: "CONCEPT DEMO",
+    status: "LIVE DEMO",
     image:
       "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwQUklMjB0ZWNoJTIwZGFyayUyMHBvcnRyYWl0JTIwc29mdHdhcmUlMjBlbmdpbmVlciUyMGNvbnN1bHRpbmclMjBoZXJvfGVufDB8fHx8MTc4OTM2MTg4Mnww&ixlib=rb-4.1.0&q=85",
     tagline: "Clone a voice from 30 seconds. Dub it into 12 languages.",

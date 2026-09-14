@@ -32,15 +32,16 @@ Build a landing page: a stunning AI product portfolio with random AI products, C
 - Real CV PDF linked for download; real email wired (rupeshdev4@gmail.com)
 
 ## Known Placeholders / Pending
-- LinkedIn (linkedin.com/in/rupesh-dev) and GitHub (github.com/rupeshdev) URLs are PLACEHOLDERS — user must share real handles
-- EchoVerse / VisionPulse / ChurnRadar are concept-demo showcase cards (not live products)
-- FinPilot card is a showcase only (no live demo URL provided by user)
+- VisionPulse / ChurnRadar remain concept-demo showcase cards (not live products)
 - Custom domain rupeshdev.space not yet mapped — needs deployment + DNS step
+
+## Implemented (2026-07-14, iteration 2)
+- Real LinkedIn (linkedin.com/in/rupesh-dev-a394a4156) and GitHub (github.com/rupeshdev4) wired in footer
+- FinPilot featured card + modal now launch the live app (finpilot-preview-1.emergent.host) in a new tab
+- EchoVerse voice demo: POST /api/tts (OpenAI tts-1 via Emergent key, 4 voice profiles, Mongo-cached mp3) + GET /api/tts/{key}.mp3; VoiceDemo widget in EchoVerse modal — verified playing 7s audio e2e
 
 ## Backlog
 - P0: Map rupeshdev.space custom domain (deploy + DNS)
-- P0: Swap in real LinkedIn/GitHub URLs
-- P1: Link live FinPilot demo URL into featured card when available
 - P1: Recruiter analytics (track chat questions, section dwell)
 - P2: Voice-clone micro-demo for EchoVerse; more AI demos; blog/field-notes section (aishashok.com-style)
 
